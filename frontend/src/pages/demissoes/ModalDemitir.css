@@ -1,0 +1,88 @@
+.demitir-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 200;
+}
+
+.demitir-modal {
+  background: #ffffff;
+  border: 1px solid #d0d0d0;
+  border-radius: 14px;
+  padding: 40px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  animation: fadeUp 0.25s ease both;
+  font-family: 'DM Sans', sans-serif;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.demitir-titulo {
+  font-size: 18px;
+  font-weight: 600;
+  color: #000000;
+  margin-bottom: 14px;
+}
+
+.demitir-mensagem {
+  font-size: 14px;
+  color: #333333;
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+
+.demitir-mensagem strong {
+  color: #000000;
+  font-weight: 600;
+}
+
+.demitir-sub {
+  font-size: 13px;
+  color: #888888;
+  margin-bottom: 28px;
+  line-height: 1.5;
+}
+
+.demitir-acoes {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.btn-nao {
+  padding: 9px 20px;
+  background: #f0f0f0;
+  border: 1px solid #d0d0d0;
+  border-radius: 8px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  color: #555555;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.btn-nao:hover { background: #e4e4e4; }
+
+.btn-sim {
+  padding: 9px 20px;
+  background: #c05040;
+  border: none;
+  border-radius: 8px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn-sim:hover { background: #a84030; }

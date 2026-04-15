@@ -1,0 +1,9 @@
+<Solution>
+  <Project Path="../backend.Application/backend.Application.csproj" Id="ee9362e6-a11a-4c36-b84a-f6d5498ad676" />
+  <Project Path="../backend.Domain/backend.Domain.csproj" Id="cf60091b-b973-4ef6-94a6-7d9aa282b6a3" />
+  <Project Path="../backend.Infrastructure/backend.Infrastructure.csproj" Id="ffe45e3f-8150-46f6-a404-75f7e1f5a2ef" />
+  <Project Path="backend.csproj">
+    <BuildDependency Project="../backend.Application/backend.Application.csproj" />
+    <BuildDependency Project="../backend.Infrastructure/backend.Infrastructure.csproj" />
+  </Project>
+</Solution>
